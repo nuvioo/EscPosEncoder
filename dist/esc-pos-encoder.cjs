@@ -1264,7 +1264,7 @@ class EscPosEncoder {
 
     if (this._options.imageMode == 'column') {
       this._queue([
-        0x1b, 0x33, 0x24,
+        0x1b, 0x33, 0x10,
       ]);
 
       getColumnData(width, height).forEach((bytes) => {
